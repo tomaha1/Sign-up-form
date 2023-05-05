@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    margin: 0;
+}
+
+.right_container {
+    width: 800px;
+    height: 638px;
+}
+
+.left_container {
+    display: flex;
+    width: 548px;
+    background-image: url(left.jpg);
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 10px;
+    background-size: 100%;
+    color:beige;
+}
+
+a:visited {
+    text-decoration: none;
+}
