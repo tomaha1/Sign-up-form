@@ -1,3 +1,23 @@
+@font-face {
+    font-family: odin-font;
+    src: url(Norse-Bold.otf);
+  }
+
+@font-face {
+    font-family: normal-font;
+    src: url(PlayfairDisplay-VariableFont_wght.ttf);
+  }
+  
+@font-face {
+    font-family: normal-font;
+    src: url(PlayfairDisplay-Italic-VariableFont_wght.ttf);
+    font-style: italic;
+  }
+
+.right_container {
+    font-family: normal-font, sans-serif;
+  }
+
 body {
     display: flex;
     margin: 0;
@@ -12,18 +32,40 @@ body {
 
 .left_container {
     display: flex;
+    flex-direction: column;
     width: 548px;
     height: 636px;
     background-image: url(left.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    align-items: flex-end;
-    justify-content: center;
+    align-items: center;
+    justify-content: flex-end;
     padding-bottom: 10px;
     color:beige;
 }
 
-a:visited {
+.stripe,
+.photo_desc {
+    display: flex;
+}
+
+.stripe {
+    margin-bottom: 400px;
+    height: 110px;
+    width: 548px;
+    align-items: center;
+    justify-content: center;
+    font-family: odin-font;
+    background-color: rgb(245, 241, 241, 0.3);
+    font-size: 80px;
+}
+
+div.stripe img {
+    height: 100px;
+}
+
+a {
+    color:beige;
     text-decoration: none;
 }
 
@@ -32,4 +74,86 @@ a:visited {
 .bottom {
     display: flex;
     height: 212px;
+    padding-left: 50px;
+}
+
+.top,
+.bottom {
+    background-color: rgb(245, 241, 241);
+    display: flex;
+    flex-direction: column;
+}
+
+.middle {
+    box-shadow: 0px -5px 4px rgb(223, 221, 221) inset;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+}
+
+.middle .first_line, .second_line, .third_line {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 12px;
+
+}
+
+.heading {
+    margin: 5px;
+    margin-left: 0px;
+}
+
+.top {
+    justify-content: end;
+    padding-bottom: 10px;
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+.forms input {
+    border: none;
+    margin-right: 50px;
+    font-size: 15px;
+    outline: solid;
+    outline-width: thin;
+    outline-color: rgb(221, 221, 221);
+    border-radius: 2px;
+}
+
+.forms input:focus {
+    outline-color: blue;
+    box-shadow: 0px 3px 6px rgb(194, 194, 194);
+}
+
+.forms input:invalid {
+    outline-color: red;
+}
+
+.bottom div {
+    margin-top: 20px;
+    
+}
+.bottom a {
+    color:#596D48;
+    text-decoration: none;
+}
+
+.bottom button {
+    background-color: #596D48;
+    color: rgb(245, 241, 241);
+    border-radius: 7px;
+    box-shadow: 0px 5px 4px rgb(223, 221, 221);
+    width: 150px;
+    height: 35px;
+}
+
+#pass {
+    margin: 0px;
+    padding: 0px;
+    color: red;
 }
